@@ -1,7 +1,7 @@
 (function ($) {
     "use strict";
 
-    // Sticky Navbar
+    // Sticky Navbar(스크롤따라 내려오게 만들기)
     $(window).scroll(function () {
         if ($(this).scrollTop() > 40) {
             $('.navbar').addClass('sticky-top');
@@ -10,7 +10,7 @@
         }
     });
     
-    // Dropdown on mouse hover
+    // 마우스 포인터 다운
     $(document).ready(function () {
         function toggleNavbarMethod() {
             if ($(window).width() > 992) {
@@ -28,7 +28,7 @@
     });
 
 
-    // Modal Video
+    // 비디오 모달
     $(document).ready(function () {
         var $videoSrc;
         $('.btn-play').click(function () {
@@ -46,7 +46,7 @@
     });
     
     
-    // Back to top button
+    // 맨위로 가기
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
             $('.back-to-top').fadeIn('slow');
@@ -60,7 +60,7 @@
     });
 
 
-    // Product carousel
+    // 제품 회전목마 ?
     $(".product-carousel").owlCarousel({
         autoplay: true,
         smartSpeed: 1000,
@@ -89,7 +89,7 @@
     });
 
 
-    // Team carousel
+    // 팀 추천서 ?...
     $(".team-carousel").owlCarousel({
         autoplay: true,
         smartSpeed: 1000,
@@ -118,7 +118,7 @@
     });
 
 
-    // Testimonials carousel
+    // 회전목마 추천서 ?..
     $(".testimonial-carousel").owlCarousel({
         autoplay: true,
         smartSpeed: 1000,
